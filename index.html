@@ -20,7 +20,8 @@
     />
     <!------------ CSS ----------->
     
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-d73236ae.css">
+    <script type="module" crossorigin src="/vanilla-app-template/assets/index-3ef4ab7f.js"></script>
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-16a32089.css">
   </head>
   <body>
     <!------------ Header ----------->
@@ -46,7 +47,7 @@
       <!-------- Top sellers ------->
       <section class="sellers">
   <div class="container">
-    <h2 class="sellers-title"><span>Top</span> Sellers</h2>
+    <h2 class="sellers-title title"><span>Top</span> Sellers</h2>
     <ul class="sellers-list">
       <li class="sellers-item">
         <img
@@ -56,6 +57,11 @@
           width="368"
           height="464"
         />
+        <p class="sellers-item-description">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
       </li>
       <li class="sellers-item">
         <img
@@ -74,6 +80,7 @@
           width="368"
           height="464"
         />
+        <button type="button" class="sellers-btn btn" data-modal-open>Buy now</button>
       </li>
     </ul>
   </div>
@@ -101,8 +108,18 @@
     <!----- Explore our new chocolate first ------>
     <!-- EISDIR: illegal operation on a directory, read -->
 
-    <!------------ JS ----------->
-    <!-- <script type="module" src="./src/js/main.js"></script>   Приклад сюди не підключати нижче створюєм нове підключення -->
+    <!----- btn-scroll-header ------>
+    <!------------Скрол догори сайту----------->
+<button class="btn-up btn-up_hide">
+  <svg class="btn-up-icon" width="53" height="53">
+    <use href="/vanilla-app-template/assets/sprite-570ad365.svg#icon-circle-up"></use>
+  </svg>
+</button>
 
+
+    <!------------ JS ----------->
+    <!-- <script type="module" src="./js/main.js"></script>   Приклад сюди не підключати нижче створюєм нове підключення -->
+    <!----- btn-scroll-header ------>
+    
   </body>
 </html>
