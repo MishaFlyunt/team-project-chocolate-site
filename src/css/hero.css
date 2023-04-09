@@ -59,13 +59,13 @@ button {
   color: var(--sec-text-color);
   border-radius: 100px;
   border: none;
-  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func),
+    background-color var(--transition-dur-and-func);
 }
 .buy-now:hover,
 .buy-now:focus {
   background-color: #fcf1e0;
-  color: #fd9222;
+  color: var(--accent-color);
 }
 
 .how-its {
@@ -81,25 +81,25 @@ button {
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func),
+    border var(--transition-dur-and-func);
 }
 .how-its:hover,
 .how-its:focus {
-  border: 1px solid #fd9222;
+  border: 1px solid var(--accent-color);
   color: #fd9222;
 }
 .scroll-button {
   display: flex;
   align-items: center;
   padding-bottom: 28px;
-  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--transition-dur-and-func);
 }
 .scroll{
-  transition: background-color 400ms cubic-bezier(0.4, 0, 0.2, 1), stroke 400ms cubic-bezier(0.4, 0, 0.2, 1) ;
+  transition: background-color var(--transition-dur-and-func), stroke var(--transition-dur-and-func) ;
 }
 .last-button-text{
-  transition: color 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-dur-and-func);
 }
 
 .scroll-button:hover .last-button-text, .scroll-button:hover button{
@@ -110,10 +110,10 @@ button {
   stroke: var(--sec-text-color);
 }
 .scroll-button:hover .last-button-text, .scroll-button:focus button{
-  color: #fd9222;
+  color:var(--accent-color);
 }
 .scroll-button:focus button{
-  background-color: #fd9222;
+  background-color:var(--accent-color);
   stroke: var(--sec-text-color);
 }
 
@@ -136,7 +136,7 @@ button {
 .icon-scroll {
   width: 16px;
   height: 16px;
-  fill: #fd9222;
+  fill: var(--accent-color);
 }
 /****************TABLET HERO***************************/
 @media screen and (min-width: 768px) {
