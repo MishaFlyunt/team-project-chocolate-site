@@ -26,11 +26,126 @@
     <!------------ CSS ----------->
     
     <script type="module" crossorigin src="/vanilla-app-template/assets/index-0ee8712d.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-1ec5bf71.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/index-6cf2abac.css">
   </head>
   <body>
     <!------------ Header ----------->
-    <!-- EISDIR: illegal operation on a directory, read -->
+    <header class="header">
+  <div class="container">
+    <!--------------MOBILE HEADER--------------------->
+    <div class="header-sup header-mobile">
+      <a href="#" class="logo-header">
+        <span class="logo-simply">SIMPLY</span>&nbsp;CHOCOLATE
+        <span class="chocolate">
+          <svg width="21" height="21">
+            <use href="../img/sprite.svg#icon-logo-chocolate"></use>
+          </svg>
+        </span>
+      </a>
+      <button
+        type="button"
+        class="open-hamburger js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon-menu" width="21" height="21">
+          <use href="../img/sprite.svg#icon-icon-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="hamburger-menu js-menu-container">
+      <button class="modal-button js-close-menu" id="mobile-menu">
+        <svg class="icon-close">
+          <use href="../img/sprite.svg#icon-close-tag"></use>
+        </svg>
+      </button>
+      <nav class="header-nav">
+        <ul class="list-header">
+          <li class="nav-list">
+            <a href="#" class="item-nav">Home</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">How it`s made</a>
+          </li>
+          <li class="nav-list">
+            <a href="" class="item-nav">Our producrs</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">Top sellers</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="down-content">
+        <ul class="hamburger-social-list">
+          <li class="social-item-menu">
+            <a href="#" class="hamburger-link">
+              <svg class="hamburger-icon-instagram" width="24" height="24">
+                <use href="../img/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item-menu">
+            <a href="#" class="hamburger-link">
+              <svg class="hamburger-icon" width="24" height="24">
+                <use href="../img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-----------DESKTOP------------>
+    <div class="header-desktop">
+      <a href="#" class="logo-header">
+        <span class="logo-simply">SIMPLY</span>&nbsp;CHOCOLATE
+        <span class="chocolate">
+          <svg width="24" height="24">
+            <use href="../img/sprite.svg#icon-logo-chocolate"></use>
+          </svg>
+        </span>
+      </a>
+      <nav class="header-nav">
+        <ul class="list-header">
+          <li class="nav-list">
+            <a href="#" class="item-nav">Home</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">How it`s made</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">Our producrs</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">Top sellers</a>
+          </li>
+          <li class="nav-list">
+            <a href="#" class="item-nav">Chocolate is loved</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="hamburger-social-list">
+        <li class="social-item-menu">
+          <a href="#" class="hamburger-link">
+            <svg class="hamburger-icon-instagram" width="24" height="24">
+              <use href="../img/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item-menu">
+          <a href="#" class="hamburger-link">
+            <svg class="hamburger-icon" width="24" height="24">
+              <use href="../img/sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
 
     <!------------ Main ------------->
     <main>
@@ -142,14 +257,17 @@
 </section>
 
       <!-------- Top sellers ------->
-      <section class="sellers">
+      <!-- <section class="sellers">
   <div class="container">
     <h2 class="sellers-title title"><span>Top</span> Sellers</h2>
     <ul class="sellers-list">
       <li class="sellers-item">
         <img
-          srcset="/vanilla-app-template/assets/choc_nut_top_sellers_desk-1bbae235.jpg 1x, /vanilla-app-template/assets/choc_nut_top_sellers_desk_2x-3997e1c8.jpg 2x"
-          src="/vanilla-app-template/assets/choc_nut_top_sellers_desk-1bbae235.jpg"
+          srcset="
+            ./img/top_sellers/choc_nut_top_sellers_desk.jpg    1x,
+            ./img/top_sellers/choc_nut_top_sellers_desk_2x.jpg 2x
+          "
+          src="./img/top_sellers/choc_nut_top_sellers_desk.jpg"
           alt="chocolate"
           width="368"
           height="464"
@@ -162,8 +280,11 @@
       </li>
       <li class="sellers-item">
         <img
-          srcset="/vanilla-app-template/assets/raisin_top_sellers_desk-ac8632fd.jpg 1x, /vanilla-app-template/assets/raisin_top_sellers_desk_2x-a8a44793.jpg 2x"
-          src="/vanilla-app-template/assets/raisin_top_sellers_desk-ac8632fd.jpg"
+          srcset="
+            ./img/top_sellers/raisin_top_sellers_desk.jpg    1x,
+            ./img/top_sellers/raisin_top_sellers_desk_2x.jpg 2x
+          "
+          src="./img/top_sellers/raisin_top_sellers_desk.jpg"
           alt="chocolate"
           width="368"
           height="464"
@@ -171,8 +292,11 @@
       </li>
       <li class="sellers-item">
         <img
-          srcset="/vanilla-app-template/assets/truffel_top_sellers_desk-ce8f8475.jpg 1x, /vanilla-app-template/assets/truffel_top_sellers_desk_2x-f25643e2.jpg 2x"
-          src="/vanilla-app-template/assets/truffel_top_sellers_desk-ce8f8475.jpg"
+          srcset="
+            ./img/top_sellers/truffel_top_sellers_desk.jpg    1x,
+            ./img/top_sellers/truffel_top_sellers_desk_2x.jpg 2x
+          "
+          src="./img/top_sellers/truffel_top_sellers_desk.jpg"
           alt="chocolate"
           width="368"
           height="464"
@@ -182,7 +306,7 @@
     </ul>
   </div>
 </section>
-
+ -->
 
       <!---------- Reviews --------->
       <!-- EISDIR: illegal operation on a directory, read -->
@@ -209,12 +333,23 @@
     <!------------Скрол догори сайту----------->
 <button class="btn-up btn-up_hide">
   <svg class="btn-up-icon" width="53" height="53">
-    <use href="/vanilla-app-template/assets/sprite-570ad365.svg#icon-circle-up"></use>
+    <use href="/vanilla-app-template/assets/sprite-cc65040d.svg#icon-circle-up"></use>
   </svg>
 </button>
 
 
     <!------------ JS ----------->
+    
+    
+    <!------- hamburger-menu -------->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/hamburger.js"></script>
+
     <!----- btn-scroll-header ------>
     
 
