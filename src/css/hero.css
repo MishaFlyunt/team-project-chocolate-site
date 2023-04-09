@@ -109,6 +109,13 @@ button {
   background-color: #fd9222;
   stroke: var(--sec-text-color);
 }
+.scroll-button:hover .last-button-text, .scroll-button:focus button{
+  color: #fd9222;
+}
+.scroll-button:focus button{
+  background-color: #fd9222;
+  stroke: var(--sec-text-color);
+}
 
 .last-button-text {
   padding-right: 12px;
