@@ -52,6 +52,10 @@
         max-width: 676px;
     }
 
+    .container {
+      padding: 0;
+    }
+
     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx) {
     .hero-section{
         background-image: url(../img/subscribe/subcribe_mobile_2x.jpg);
