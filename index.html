@@ -25,8 +25,8 @@
     />
     <!------------ CSS ----------->
     
-    <script type="module" crossorigin src="/team-project-chocolate-site/assets/index-de136a25.js"></script>
-    <link rel="stylesheet" href="/team-project-chocolate-site/assets/index-75e2c2d2.css">
+    <script type="module" crossorigin src="/team-project-chocolate-site/assets/index-fce686ad.js"></script>
+    <link rel="stylesheet" href="/team-project-chocolate-site/assets/index-163b03e6.css">
   </head>
 
   <body>
@@ -159,7 +159,7 @@
       </p>
       <div class="all-button">
         <div class="hero-buttons">
-          <button type="button" class="buy-now" data-modal-open>Buy now</button>
+          <button type="button" class="buy-now" data-hero-open>Buy now</button>
           <button type="button" class="how-its" href="#">How it`s made</button>
         </div>
         <div class="scroll-button">
@@ -175,7 +175,6 @@
   </section>
 
       <!------ Advantages ---------->
-    
 
       <!----- Unique components ---->
       <!-- Unique components section -->
@@ -503,7 +502,7 @@
           width="368"
           height="464"
         />
-        <button type="button" class="sellers-btn btn" data-modal-open>Buy now</button>
+        <button type="button" class="sellers-btn btn" data-sellers-open>Buy now</button>
       </li>
     </ul>
   </div>
@@ -615,7 +614,7 @@
       <div class="reviews-slider-pagination swiper-pagination-1"></div>
     </div>
 
-    <button class="reviews-btn btn" type="button" data-modal-open-2>Leave a review</button>
+    <button class="reviews-btn btn" type="button" data-review-open>Leave a review</button>
   </div>
 </section>
 
@@ -629,7 +628,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button type="button" class="subscribe-btn btn" data-modal-open-1>
+    <button type="button" class="subscribe-btn btn" data-explore-open>
       Subscribe
     </button>
   </div>
@@ -686,9 +685,14 @@
     <!------------ Modal ----------->
 
     <!------------ Buy now --------->
-    <div class="buy-now__backdrop backdrop is-hidden" data-modal>
+    <div class="buy-now__backdrop is-hidden" data-hero-modal data-sellers-modal>
   <div class="container buy-now__modal-container">
-    <button type="button" class="buy-now__close-btn" data-modal-close>
+    <button
+      type="button"
+      class="buy-now__close-btn"
+      data-hero-close
+      data-sellers-close
+    >
       <svg class="buy-now__close-btn-icon" width="24" height="24">
         <use href="/team-project-chocolate-site/assets/sprite-e8e59e14.svg#icon-close-buy-now"></use>
       </svg>
@@ -877,9 +881,9 @@
 
 
     <!---- Leave a review about our chocolate ---->
-    <div class="backdrop is-hidden" data-modal-2>
+    <div class="backdrop is-hidden" data-review-modal>
   <div class="modal-review">
-    <button class="review-close-btn" type="button" data-modal-close-2>
+    <button class="review-close-btn" type="button" data-review-close>
       <svg width="15" height="15">
         <use href="/team-project-chocolate-site/assets/sprite-e8e59e14.svg#icon-vector"></use>
       </svg>
@@ -933,7 +937,7 @@
     <!----- Explore our new chocolate first ------>
     <!-- modal -->
 
-<div class="backdrop is-hidden-1" data-modal-1>
+<div class="backdrop is-hidden" data-explore>
   <div class="modal">
     <img
       class="img-style-radius"
@@ -1000,6 +1004,7 @@
     
 
     <!------- Modal-form ------->
+    
     
     
     
