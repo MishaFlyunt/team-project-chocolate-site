@@ -25,8 +25,8 @@
     />
     <!------------ CSS ----------->
     
-    <script type="module" crossorigin src="/team-project-chocolate-site/assets/index-23f8522b.js"></script>
-    <link rel="stylesheet" href="/team-project-chocolate-site/assets/index-3041e5c4.css">
+    <script type="module" crossorigin src="/team-project-chocolate-site/assets/index-8ef13792.js"></script>
+    <link rel="stylesheet" href="/team-project-chocolate-site/assets/index-1e691f89.css">
   </head>
 
   <body>
@@ -364,44 +364,46 @@
       HOW IT’S<span class="how-its-made-span">MADE?</span>
     </h2>
     <div class="how-its-made-desktop">
-      <picture class="how-its-made-img">
-        <source
-          srcset="
-            ./img/how_its_made/how_its_made_desk.jpg    1x,
-            ./img/how_its_made/how_its_made_desk_2x.jpg 2x
-          "
-          media="(min-width:1200px)"
-        />
-        <source
-          srcset="
-            ./img/how_its_made/how_its_made_tablet.jpg    1x,
-            ./img/how_its_made/how_its_made_tablet_2x.jpg 2x
-          "
-          media="(min-width:768px)"
-        />
-        <source
-          srcset="
-            ./img/how_its_made/how_its_made_mobile.jpg    1x,
-            ./img/how_its_made/how_its_made_mobile_2x.jpg 2x
-          "
-          media="(min-width:375px)"
-        />
-        <source
-          srcset="
-            ./img/how_its_made/how_its_made_mobile.jpg    1x,
-            ./img/how_its_made/how_its_made_mobile_2x.jpg 2x
-          "
-          media="(max-width:374px)"
-        />
-        <img
-          class="how-its-made-image"
-          src="./img/how_its_made/how_its_made_mobile.jpg"
-          alt="video"
-        />
+      <div class="how-its-made-img-block">
+        <picture class="how-its-made-img">
+          <source
+            srcset="
+              ./img/how_its_made/how_its_made_desk.jpg    1x,
+              ./img/how_its_made/how_its_made_desk_2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./img/how_its_made/how_its_made_tablet.jpg    1x,
+              ./img/how_its_made/how_its_made_tablet_2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./img/how_its_made/how_its_made_mobile.jpg    1x,
+              ./img/how_its_made/how_its_made_mobile_2x.jpg 2x
+            "
+            media="(min-width:375px)"
+          />
+          <source
+            srcset="
+              ./img/how_its_made/how_its_made_mobile.jpg    1x,
+              ./img/how_its_made/how_its_made_mobile_2x.jpg 2x
+            "
+            media="(max-width:374px)"
+          />
+          <img
+            class="how-its-made-image"
+            src="./img/how_its_made/how_its_made_mobile.jpg"
+            alt="video"
+          />
+        </picture>
         <svg class="how-its-made-icon" width="35px" height="35px">
           <use href="/team-project-chocolate-site/assets/sprite-2d2076af.svg#icon-play-icon-chocolate"></use>
         </svg>
-      </picture>
+      </div>
       <div class="how-container">
         <h3 class="try-it-interaction">
           Try our chocolates today and <br />
@@ -891,7 +893,7 @@
       <label class="buy-now__modal-form-field" for="user-phone">
         <span class="buy-now__modal-form-wrapper">Phone number</span>
         <span class="buy-now__modal-form-desc"></span>
-        <div class="buy-now__modal-wrap-desk">
+        <span class="buy-now__modal-wrap-desk">
           <input
             type="tel"
             name="user-phone"
@@ -903,13 +905,13 @@
             title="xxx-xxx-xx-xx"
             minlength="2"
           />
-          <div class="buy-now__modal-flag">
+          <span class="buy-now__modal-flag">
             <svg class="buy-now__svg-flag" width="24" height="24">
               <use href="/team-project-chocolate-site/assets/sprite-2d2076af.svg#icon-flag"></use>
             </svg>
             <span class="buy-now__modal-tel">+380</span>
-          </div>
-        </div>
+          </span>
+        </span>
       </label>
       <label class="buy-now__modal-form-field" for="text">
         <span class="buy-now__modal-form-wrapper">Card number</span>
@@ -1010,7 +1012,6 @@
       src="/team-project-chocolate-site/assets/explore_desk_2x-09b5f9f1.jpg"
       alt="photo"
     />
-
     <button type="button" data-explore-close class="modal-close">
       <svg class="explore-icon-modal-btn" width="24" height="24">
         <use href="/team-project-chocolate-site/assets/sprite-2d2076af.svg#icon-vector"></use>
@@ -1078,8 +1079,5 @@
 
     <!---- Smooth-scrolling ---->
     
-
-     <!------ Video ------->
-     
   </body>
 </html>
